@@ -1,4 +1,4 @@
-### final_projects
+### IS 590 Porgramming Analytics and Data Preprocessing - Final Project
 
 ## Project Title:
 Profit/Loss Analysis of Surplus Hotel Room Reservation using Monte-Carlo Simulation
