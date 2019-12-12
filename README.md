@@ -20,3 +20,6 @@ Taking into account the type of booking, class of room booked, size of booking, 
 
 ## Approach:
 We used a monte-carlo simulation to find the optimal number of overbookings for a particular day which would give the hotel maximum revenue on that day. You can refer to the program flowchart [here](https://github.com/Zainabzav/final_projects/blob/master/project_workflow.png) to get a rough idea about the workflow of our project.
+
+1. We first take in the follwing inputs from the user(modelled for hotel staff/managers)
+https://github.com/Zainabzav/NY_Taxi_Trip_DataViz/issues/1
