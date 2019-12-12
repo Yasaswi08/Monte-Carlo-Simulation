@@ -23,3 +23,4 @@ We used a monte-carlo simulation to find the optimal number of overbookings for 
 
 1. We first take in the follwing inputs from the user(modelled for hotel staff/managers)
 https://github.com/Zainabzav/NY_Taxi_Trip_DataViz/issues/1
+![Alt text](https://github.com/Zainabzav/NY_Taxi_Trip_DataViz/issues/1 "Title")
