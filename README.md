@@ -46,18 +46,24 @@ We used a monte-carlo simulation to find the optimal number of overbookings for 
 ### Case 1: 
 rooms = 100, date = 01-17-2019, Type= business
 #### Input:
+
 ![Alt text](https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2011.05.34%20AM.png?raw=true "Optional Title")
+
 #### Output:
 ##### Plot 1: 
 Displays the plot of the revenues generated for each category of rooms vs the number of overbookings
-![Alt text](https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.23.34%20PM.png?raw=true "Optional Title")
+
+<img src="https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.23.34%20PM.png" data-canonical-src="https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.23.34%20PM.png" width="600" height="400" />
 ##### Plot 2:
 Displays the plot of the total revenues vs the number of overbookings
-![Alt text](https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.27.10%20PM.png?raw=true "Optional Title")
+
+<img src="https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.27.10%20PM.png" data-canonical-src="https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.27.10%20PM.png" width="600" height="400" />
 ##### Plot 3:
 Plot all the cancellation numbers and their corresponding total revenues
-![Alt text](https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.29.29%20PM.png?raw=true "Optional Title")
+
+<img src="https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.29.29%20PM.png" data-canonical-src="https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.29.29%20PM.png" width="600" height="400" />
 ##### Optimal overbooking number and maximum cancellations for this case:
-![Alt text](https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.29.46%20PM.png?raw=true "Optional Title")
+
+![Alt text](https://github.com/Zainabzav/final_projects/blob/master/images/Screen%20Shot%202019-12-12%20at%2012.29.46%20PM.png?raw=true "Optional Title" )
 
 
