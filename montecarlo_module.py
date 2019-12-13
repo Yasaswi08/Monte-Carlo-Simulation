@@ -180,8 +180,25 @@ def revenue_generator(number_of_rooms_reserved, hotel_capacity, number_of_guests
                       number_of_guests_cancel, refund_per_cancellation, holiday_boolean, standard_cost, deluxe_cost,
                       superior_cost, room_category):
     """
+    This function assists in calculating the total profits of the hotel.
 
+    :param number_of_rooms_reserved : the count of final reservation done, int data type
+    :param hotel_capacity: the number of rooms in hotel, int data type
+    :param number_of_guests_showup: the number of customers that actually show up, int data type
+    :param profit: the profit made on particular room, float data type
+    :param number_of_guests_cancel: the count of customers that cancel the reservation, int data type
+    :param refund_per_cancellation: the money hotel administration pays to those who cancel the reservation, int data type
+    :param holiday_boolean: has boolean value of being a special day or not, boolean data type
+    :param standard_cost: the cost of the standard kind of room, int data type
+    :param deluxe_cost: the price of the deluxe type of room, int data type
+    :param superior_cost: the amount paid for the superior variation of room, int data type
+    :param room_category: the kind of room that is reserved, str data type
+    :return: the profit that hotel makes, float data type
+
+    >>> revenue_generator(105, 100, 103, 30, 1, 120, True, 100, 200, 300,'Standard')
+    2640.0
     """
+
     loss_list = []
 
     if number_of_guests_showup <= hotel_capacity:
