@@ -229,7 +229,37 @@ def Monte_Carlo(capacity, holiday_boolean, standard_cost, deluxe_cost, superior_
                 deluxe_capacity, superior_capacity, superior_split_percentage, deluxe_split_percentage,
                 standard_split_percentage):
     """
+    Here we simulate the situation when overbook number is from 0 to 20% of capacity, and for each scenario,
+    we simulate for 5000 times.
 
+    :param capacity: the count of hotel capacity, int data type
+    :param holiday_boolean: has boolean value of being a special day or not, boolean data type
+    :param standard_cost: the cost of the standard kind of room, int data type
+    :param deluxe_cost: the price of the deluxe type of room, int data type
+    :param superior_cost: the amount paid for the superior variation of room, int data type
+    :param standard_capacity: the number of standard rooms, int data type
+    :param deluxe_capacity: the count id deluxe kind of rooms, int data type
+    :param superior_capacity: the count for number of superior rooms, int data type
+    :param superior_split_percentage: the percentage of superior rooms in hotel, float data type
+    :param deluxe_split_percentage: the percentage of deluxe rooms in hotel, float data type
+    :param standard_split_percentage: the percentage of standard rooms in hotel, float data type
+    :return: the dictionary data type with the information of overbooked rooms count, standard overbooked count,
+    deluxe overbooked count, superior overbooked count, standard rooms mean revenue, deluxe rooms mean revenue,
+    superior rooms mean revenue, total mean revenue, max number of guests cancel, standard cancels, deluxe cancels,
+    superior cancels, total refund for cancellations
+
+    >>> len(Monte_Carlo(500, True, 100, 300, 500, 75, 150, 275, 0.15, 0.3, 0.55)['mean_revenues'])
+    done
+    100
+    >>> len(Monte_Carlo(100, False, 90, 120, 150, 20, 30, 50, 0.2, 0.3, 0.5)['mean_revenues'])
+    done
+    20
+    >>> len(Monte_Carlo(1000, False, 80, 110, 140, 250, 350, 400, 0.25, 0.35, 0.4)['cancel'])
+    done
+    200
+    >>> len(Monte_Carlo(100, True, 90, 120, 150, 20, 30, 50, 0.2, 0.3, 0.5)['dict'])
+    done
+    20
     """
     result_of_montecarlo = {'mean_revenues': [], 'cancel': [], 'dict':[]}
     roomcategories = ["Standard", 'Deluxe', 'Superior']
