@@ -8,7 +8,16 @@ import statistics as st
 
 def dayofweek(d, m, y):
     """
+    The function tells us weather the given day of the year is a weekday or weekend.
+    :param d: date of the day, str data type
+    :param m: the month of the day given, str data type
+    :param y: the year of the day, str data type
+    :return the number from 0 to 7 for day of week
 
+    >>> dayofweek(2, 1, 2019)
+    3
+    >>> dayofweek(13, 3, 2020)
+    5
     """
     t = [0, 3, 2, 5, 0, 3,
          5, 1, 4, 6, 2, 4]
