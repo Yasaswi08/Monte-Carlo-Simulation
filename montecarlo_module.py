@@ -139,8 +139,22 @@ class HotelRoom:
     
 def parameter_generator(demand_hyp, probability_of_demand, showup_prob, number_of_rooms_overbooked, capacity):
     """
+    This function does the job of creating random variables like num of rooms_demand, number of guests showup and number
+    of guests cancel. By using these we will calculate the number of rooms reserved on particular day.
 
+    :param demand_hyp: the maximum overbooking percentage possible, int data type
+    :param probability_of_demand: the probability of each person's ticket reservation, float data type
+    :param showup_prob: the probability that persons shows-up on given day,float data type
+    :param number_of_rooms_overbooked: the number of rooms that are overbooked,int data type
+    :param capacity: the total rooms available in a hotel, int data type
+    :return: number of rooms reserved, number of guests showup and number of guests cancel.
+
+    >>> parameter_generator(83, 0.9, 0.85, 7, 200)[0] > 70
+    True
+    >>> parameter_generator(95, 0.8, 0.8, 10, 90)[1] < 60
+    False
     """
+
     numofrooms_demand = np.random.binomial(demand_hyp, probability_of_demand)
 
     if numofrooms_demand >= capacity:
