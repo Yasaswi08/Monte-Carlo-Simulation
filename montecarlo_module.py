@@ -27,7 +27,20 @@ def dayofweek(d, m, y):
 
 def datesplitfunction(holiday_boolean, date_of_booking_temp):
     """
+    The functions does the action of
+    :param holiday_boolean: has the boolean value of the booking day being holiday, boolean data type
+    :param date_of_booking_temp: the date of the booking, str data type
+    :return date_list: the list containing the day of booking and date of booking
+
+    >>> datesplitfunction(True, '01-01-2019')
+    You're booking on a public holiday! Since the hotel runs in high demand during this time, your customer will not get the full amount in refund_per_cancellation if they wish to cancel at anytime.
+    ['1-1-2019', 2]
+    >>> datesplitfunction(False, '01-17-2019')
+    ['1-17-2019', 4]
+    >>> datesplitfunction(False, '12-15-2019')
+    ['12-15-2019', 0]
     """
+
     date_list = []
     if holiday_boolean:
         print(
