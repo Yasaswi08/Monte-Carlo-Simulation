@@ -70,7 +70,9 @@ def datesplitfunction(holiday_boolean, date_of_booking_temp):
 
 class HotelRoom:
     """
-
+    This is a object-oriented class. It stores the necessary information of hotel capacity, holiday boolean, capacities
+    of each kind of room, cost of each kind of room, split by kind of room, date and day of booking and finally
+    category of hotel.
     """
     holiday_list = ['01-01', '01-21', '02-18', '05-27', '07-04', '09-02', '10-14', '10-11', '11-28', '12-25', '12-31']
 
