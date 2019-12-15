@@ -27,7 +27,8 @@ def dayofweek(d, m, y):
 
 def datesplitfunction(holiday_boolean, date_of_booking_temp):
     """
-    The functions does the action of
+    The functions does the action of removig the leading and trailing 0s in the date of booking from the month and the day portion of the date to calculate the day of booking
+    
     :param holiday_boolean: has the boolean value of the booking day being holiday, boolean data type
     :param date_of_booking_temp: the date of the booking, str data type
     :return date_list: the list containing the day of booking and date of booking
@@ -80,6 +81,23 @@ class HotelRoom:
                  standard_cost, deluxe_cost, superior_cost, superior_split_percentage, deluxe_split_percentage,
                  standard_split_percentage, date_of_booking, day_of_booking, hotel_category):
         """
+        Constructor method in our class. It assigns the attribute to an object everytime a new object is created. The attributes are mentioned below in parameters
+        
+        :param hotel_capacity_x: total capacity of the hotel, int
+        :param holiday_boolean: true if the date of booking is a holiday, else false, boolean
+        :param standard_capacity: number of standard rooms in the hotel, int
+        :param deluxe_capacity: number of deluxe rooms in the hotel, int
+        :param superior_capacity: number of deluxe rooms in the hotel, int
+        :param standard_cost: cost of superior room, int
+        :param deluxe_cost: cost of deluxe room, int
+        :param superior_cost: cost of superior room, int
+        :param superior_split_percentage: Percentage of standard rooms in total rooms, int
+        :param deluxe_split_percentage: Percentage of deluxe rooms in total rooms, int
+        :param standard_split_percentage:Percentage of superior rooms in total rooms, int
+        :param date_of_booking: The date for which the booking is to be made, string
+        :param day_of_booking: The day between 0-7 of the weekday corresponding to the date of booking, string
+        :param hotel_category: if the hotel is a business or a vacation hotel type, string
+        :returns None
 
         """
         self.hotel_capacity = hotel_capacity_x
@@ -100,7 +118,9 @@ class HotelRoom:
     @classmethod
     def attribute_collector(cls):
         """
-
+        This class method passes the actual class object within the function call
+        :return: class object, object
+        
         """
         # present_date = time.strftime('%m-%d', time.localtime(time.time()))
         date_of_booking_temp = input("Enter the date you want to book (MM-DD-YYYY):")
