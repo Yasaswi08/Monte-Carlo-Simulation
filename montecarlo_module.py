@@ -6,6 +6,7 @@ import pandas as pd
 import math 
 import statistics as st
 
+# code used from https://www.geeksforgeeks.org/find-day-of-the-week-for-a-given-date/
 def dayofweek(d, m, y):
     """
     The function tells us weather the given day of the year is a weekday or weekend.
@@ -69,6 +70,7 @@ def datesplitfunction(holiday_boolean, date_of_booking_temp):
     date_list = [date_of_booking, day_of_booking]
     return date_list
 
+# code design inspired from https://github.com/Lavinialau/Airline-Overbooking and https://github.com/Xuefeng4/Monte-Carlo-Simulation-of-Airplane-Ticket-Overbooking/blob/master/simulation.ipynb. Basic code design is inspired from these links, but we have made substantial changes to the program logic to apply to the hotel scenario and consider more complex scenarios to account for more uncertanity in our project. 
 class HotelRoom:
     """
     This is a object-oriented class. It stores the necessary information of hotel capacity, holiday boolean, capacities
