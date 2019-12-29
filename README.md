@@ -132,4 +132,13 @@ We ran the simulation about 25 times with multiple variations in hotel type, dat
 - When the total overbooking room percentage ranges from 0-12% of the total hotel capacity, the hotel makes profits. If the precentage is greater than 13% then the hotel suffers loss. Hence our first hypothesis was rejected.
 - Considering plot 3 of the output in all the different cases, we observed a trend showcasing a decrease in profits with increasing cancellation numbers. Thus even if the hotel is making some money from the cancellation rooms, when the number keeps increasing, the hotel is unable to covert those rooms into profit which leads to less occupancy and in-turn lesser profits. Hence our second hypothesis was also rejected based on the simulations in our model.
 
+## Sources
+https://www.geeksforgeeks.org/find-day-of-the-week-for-a-given-date/
+https://github.com/Lavinialau/Airline-Overbooking
+https://medium.com/@gaurang.swarge/airline-ticket-overbooking-monte-carlo-simulation-9e276cc2bd8a
+https://www.academia.edu/28628736/A_simulation-based_overbooking_approach_for_hotel_revenue_management
+https://github.com/Xuefeng4/Monte-Carlo-Simulation-of-Airplane-Ticket-Overbooking/blob/master/simulation.ipynb
+https://setupmyhotel.com/train-my-hotel-staff/front-office-training/439-overbooking.html
+http://orion.math.iastate.edu/ytpoon/publication/JFBR2017.pdf
+http://www.scriptiesonline.uba.uva.nl/document/648510
 
